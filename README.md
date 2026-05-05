@@ -1,34 +1,34 @@
-# Sudoku em C com PDCurses
+# Sudoku in C with PDCurses
 
-Jogo de Sudoku para terminal em Windows, escrito em C e usando a biblioteca PDCurses.
+A terminal Sudoku game for Windows, written in C and using the PDCurses library. Yes, this was made entirely with AI.
 
-## Funcionalidades
+## Features
 
-- Tabuleiro 9x9 jogavel no terminal
-- Navegacao por setas
-- Numeros fixos destacados
-- Conflitos visuais em vermelho
-- Reinicio do puzzle atual
-- Sorteio de um novo puzzle
+- Playable 9x9 board in the terminal
+- Arrow-key navigation
+- Highlighted fixed numbers
+- Visual conflicts shown in red
+- Reset the current puzzle
+- Randomly select a new puzzle
 
-## Controles
+## Controls
 
-- `Setas`: mover a selecao
-- `1` a `9`: preencher a celula
-- `0`, `Backspace` ou `Delete`: limpar a celula
-- `N`: novo jogo
-- `R`: reiniciar puzzle atual
-- `Q` ou `Esc`: sair
+- `Arrow keys`: move the selection
+- `1` to `9`: fill the cell
+- `0`, `Backspace`, or `Delete`: clear the cell
+- `N`: new game
+- `R`: reset the current puzzle
+- `Q` or `Esc`: quit
 
-## Compilacao no Windows
+## Building on Windows
 
-Com MinGW e PDCurses instalado:
+With MinGW and PDCurses installed:
 
 ```bat
 gcc main.c sudoku.c -o sudoku.exe -lpdcurses
 ```
 
-Se a sua distribuicao usar outro nome para a biblioteca, troque o parametro final, por exemplo:
+If your distribution uses a different name for the library, replace the final parameter, for example:
 
 ```bat
 gcc main.c sudoku.c -o sudoku.exe -lpdcurseswin
